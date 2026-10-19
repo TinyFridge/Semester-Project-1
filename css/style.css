@@ -1,0 +1,115 @@
+/* Colours and fonts */
+:root {
+  --color-primary: #1d3557;
+  --color-accent: #e76f51;
+  --color-light: #f1faee;
+  --color-text: #1b1b1b;
+  --color-white: #ffffff;
+
+  --font-heading: "Trebuchet MS", Arial, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
+
+  --max-width: 1100px;
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 2rem;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-light);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Header and navigation */
+.site-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  padding: var(--space-m);
+  background-color: var(--color-primary);
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-l) var(--space-m);
+}
+
+/* Footer */
+.site-footer {
+  padding: var(--space-l) var(--space-m);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-m) var(--space-l);
+  }
+}
