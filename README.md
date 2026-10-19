@@ -13,5 +13,5 @@ Semester project 1 at Noroff. A responsive website for the Community Science Mus
 
 ## Links
 
-- Live site:
+- Live site: community-science-museum-marcus.netlify.app
 - Prototype:
