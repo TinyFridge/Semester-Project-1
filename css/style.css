@@ -229,9 +229,52 @@ main {
 
 /* Footer */
 .site-footer {
-  padding: var(--space-l) var(--space-m);
-  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+  margin-top: 64px;
+  padding: 48px 20px;
+  color: #e4e8f0;
   background-color: var(--color-primary);
+}
+
+.footer-name {
+  margin: 0 0 var(--space-s);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.site-footer address {
+  font-style: normal;
+}
+
+.footer-heading {
+  margin: 0 0 var(--space-s);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 /* Desktop */
@@ -291,5 +334,11 @@ main {
 
   .main-nav .button {
     display: inline-block;
+  }
+
+  .site-footer {
+    flex-direction: row;
+    gap: 120px;
+    padding: 64px 100px;
   }
 }
